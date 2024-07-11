@@ -3,4 +3,3 @@ export const getAllEmployees = () => {
     res.json()
   );
 };
-//timestamp YT vid 19:30
