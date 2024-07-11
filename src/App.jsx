@@ -1,12 +1,14 @@
 import "./app.css";
-import { CustomerList } from "./Components/Customers/CustomersList";
+import { EmployeeList } from "./Components/Employees/EmployeeList";
+// import { CustomerList } from "./Components/Customers/CustomersList";
 // import { TicketList } from "./Components/Tickets/TicketList";
 
 export const App = () => {
   return (
     <>
       {/* <TicketList /> */}
-      <CustomerList />
+      {/* <CustomerList /> */}
+      {<EmployeeList />}
     </>
   );
 };
