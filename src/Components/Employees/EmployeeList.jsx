@@ -13,7 +13,7 @@ export const EmployeeList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="employees">
       {employees.map((employeeObj) => {
         return <User user={employeeObj} key={employeeObj.id} />;
       })}
