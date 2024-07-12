@@ -36,10 +36,7 @@ export const EmployeeDetails = () => {
         <span className="employee-info">Rate : </span>
         {employee.rate}
       </div>
-      <div>
-        <span className="employee-info">Number of tickets working on : </span>
-        {workingTickets.length}
-      </div>
+      <div>Currently working on {workingTickets.length} tickets</div>
     </section>
   );
 };
