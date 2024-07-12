@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getNonStaffUsers } from "../../services/userService";
 import "./Customers.css";
-import { User } from "../../Users/User";
+import { User } from "../Users/User";
 import { Link } from "react-router-dom";
 
 export const CustomerList = () => {
