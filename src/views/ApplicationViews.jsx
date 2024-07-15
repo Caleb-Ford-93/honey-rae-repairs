@@ -7,6 +7,7 @@ import { CustomerDetails } from "../Components/Customers/CustomerDetails";
 import { EmployeeList } from "../Components/Employees/EmployeeList";
 import { EmployeeDetails } from "../Components/Employees/EmployeeDetails";
 import { useEffect, useState } from "react";
+import { EmployeeForm } from "../Components/Forms/EmployeeForm";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -42,6 +43,10 @@ export const ApplicationViews = () => {
           <Route index element={<EmployeeList />} />
           <Route path=":employeeId" element={<EmployeeDetails />} />
         </Route>
+        <Route
+          path="profile"
+          element={<EmployeeForm currentUser={currentUser} />}
+        />
       </Route>
     </Routes>
   );
